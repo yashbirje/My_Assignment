@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Facebook Clone Page</title>
+	<style type="text/css">
+		.mdiv
+		{
+			background-color: #f0f2f5;
+			background-size: cover;
+			
+			margin-left: 0px;
+			top: 0px;
+
+		}
+
+		.lgnfrm
+		{
+			background-color: #ffffff;
+			width: 420px;
+			height: 360px;
+			margin: 2% -5%;
+			border-radius: 10px;
+			box-shadow: 0px 0px 5px grey ;
+		}
+
+		input
+		{
+			width: 90%;
+			margin-top: 20px;
+			height: 45px;
+			background-color: transparent;
+/*			border-bottom: 1px solid white;*/
+			border-radius: 5px;
+			color: grey;
+			text-align: left;
+			font-weight: bolder;
+			border-color: grey;
+		
+		}
+
+		input:focus
+		{
+			outline: none;
+		}
+
+		.head
+		{
+			color: white;
+			letter-spacing: 4px;
+			font-size: 30px;
+			font-family: Elephant;
+			font-weight: bolder;
+		}
+
+		input[name="lgn"]
+		{
+			border: none;
+			background-color: #1877f2;
+			height: 45px;
+			color: white;
+			font-size: 18px;
+			border-radius: 5px;
+			margin-bottom: 15px;
+			transition-duration: 1s;
+			text-align: center;
+		}
+
+		input[name="create"]
+		{
+			border: none;
+			background-color: #42b72a;
+			height: 42px;
+			width: 70%;
+			color: white;
+			font-size: 15px;
+			border-radius: 5px;
+			margin-bottom: 5px;
+			transition-duration: 1s;
+			text-align: center;
+		}
+
+		.frg
+		{
+			color: #3b88f3;
+			font-size: 15px;
+			margin-bottom: 10px;
+		}
+
+		hr{
+			margin-top: 15px;
+		}
+
+
+		input[type="button"]:hover
+		{
+			background-color: lightblue;
+			color: blue;
+			border: 2px solid white;
+			transform: scale(1.1);
+			cursor: pointer;
+		}
+
+		.fb
+		{
+			color: #1877f2;
+			font-size: 75px;
+			margin-left: 45px;
+			font-weight: bolder;
+			font-family: Arial;
+
+			
+		}
+
+		.conn
+		{
+			color: #050505;
+			font-size: 35px;
+			margin-left: 45px;
+			font-family: arial;
+		}
+
+
+
+		a
+		{
+			text-decoration: none;
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="mdiv">
+		<table border="0px" cellspacing="0px" cellpadding="0px"  width="100%" height="700px">
+			<tr>
+				<td width="60%" align="left" class="td1"><span class="fb" >facebook</span><br>
+				<span class="conn">Connect with friends and the world </span><br>
+				<span class="conn">around you on Facebook.</span>  </td>
+
+
+				<td >
+					<div class="lgnfrm" align="center">
+					<form autocomplete="off">
+					
+					<input type="text" name="username" placeholder="Email or Phone number" id="user">
+					<input type="text" name="pwd" placeholder="Password" style="margin-bottom: 10px ;" id="pass">
+					<input type="button" name="lgn" value="LOGIN" onclick="validate()">
+					<span ><a href="#" class="frg">Forgot Password?</a> </span>
+					<hr width="90%">
+					<input class="create" type="button" name="create" value="Create new account">
+					
+					</form>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+</html>
